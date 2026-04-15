@@ -41,9 +41,6 @@ function App() {
       {/* Custom Cursor */}
       <CustomCursor mousePos={mousePos} />
 
-      {/* Theme Toggle */}
-      <ThemeToggle />
-
       {/* Layout */}
       <Navbar />
       <main>
