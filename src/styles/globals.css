@@ -1,0 +1,198 @@
+/* :root {
+  --bg: #030712;
+  --bg2: #0a0f1e;
+  --accent: #00f5d4;
+  --accent2: #7c3aed;
+  --accent3: #f59e0b;
+  --text: #e2e8f0;
+  --muted: #64748b;
+  --card: rgba(15, 23, 42, 0.8);
+  --border: rgba(0, 245, 212, 0.15);
+  --glow: 0 0 30px rgba(0, 245, 212, 0.3);
+  --font-mono: 'Space Mono', monospace;
+  --font-sans: 'Syne', sans-serif;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+a { cursor: none; }
+button { cursor: none; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes orbFloat {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(40px, 40px) scale(1.1); }
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(1); }
+  50%       { opacity: 1;   transform: scaleY(1.2); }
+}
+
+/* src/styles/theme.css */
+:root {
+
+  --bg: #030712;
+  --bg2: #0a0f1e;
+  --bg-nav: rgba(3, 7, 18, 0.7);
+  --accent: #00f5d4;
+  --accent2: #7c3aed;
+  --accent3: #f59e0b;
+  --text: #e2e8f0;
+  --text-bright: #ffffff;
+  --muted: #64748b;
+  --card: rgba(15, 23, 42, 0.8);
+  --border: rgba(0, 245, 212, 0.15);
+  --glow: 0 0 30px rgba(0, 245, 212, 0.3);
+  --font-mono: 'Space Mono', monospace;
+  --font-sans: 'Syne', sans-serif;
+
+
+  --orb1: rgba(124, 58, 237, 0.08);
+
+  --orb2: rgba(0, 245, 212, 0.06);
+
+
+  transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease, background-color 0.4s ease;
+}
+
+
+[data-theme='light'] {
+  --bg: #f3f4f6;
+
+  --bg2: #e5e7eb;
+
+  --bg-nav: rgba(243, 244, 246, 0.8);
+  --accent: #0d9488;
+
+  --accent2: #6d28d9;
+
+  --accent3: #d97706;
+
+  --text: #0f172a;
+  --text-bright: #020617;
+  --muted: #475569;
+  --card: rgba(243, 244, 246, 0.9);
+  --border: #e2e8f0;
+  --glow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  --orb1: rgba(124, 58, 237, 0.04);
+  --orb2: rgba(0, 245, 212, 0.03);
+}
+
+[data-theme='light'] canvas {
+  opacity: 0.3;
+}
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+
+a,
+button {
+  cursor: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes orbFloat {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+
+  to {
+    transform: translate(40px, 40px) scale(1.1);
+  }
+}
+
+@keyframes scrollPulse {
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scaleY(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleY(1.2);
+  }
+}
