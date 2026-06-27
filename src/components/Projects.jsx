@@ -51,6 +51,16 @@ const projects = [
     tags: ['MERN', 'AI/ML', 'Socket.io'],
     demo: '#',
     github: '#',
+  },
+  {
+    icon: '🎙️',
+    num: '// 05',
+    category: 'AI/ML',
+    name: 'Interview AI',
+    desc: 'AI-powered mock interview application to help users practice and improve their interview skills.',
+    tags: ['React', 'AI/ML', 'Next.js'],
+    demo: 'https://interview-ai-five-ochre.vercel.app',
+    github: '#',
   }
 ];
 
