@@ -209,6 +209,7 @@ export default function TerminalLoader({ onComplete }) {
   ];
 
   // 4. Typist Engine
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (currentLineIndex >= rawLines.length) {
       setIsDone(true);
