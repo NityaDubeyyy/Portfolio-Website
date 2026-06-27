@@ -209,7 +209,7 @@ export default function TerminalLoader({ onComplete }) {
   ];
 
   // 4. Typist Engine
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     if (currentLineIndex >= rawLines.length) {
       setIsDone(true);
@@ -244,6 +244,7 @@ export default function TerminalLoader({ onComplete }) {
 
     return () => clearInterval(typingInterval);
   }, [currentLineIndex, systemInfo]);
+  /* eslint-enable react-hooks/exhaustive-deps */
 
   const activeTextColor = getThemeTextHex(terminalColor);
   const activeAccentColor = getThemeHex(terminalColor);
